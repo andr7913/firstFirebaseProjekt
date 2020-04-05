@@ -1,0 +1,22 @@
+
+
+<hr>
+<h2 class="info">du er loggede ind</h2>
+<div *ngIf="user$ | async as user">
+  <p class="info">Email: <strong>{{ user.email }}</strong></p>
+  <p class="info">full name:<strong> {{ user.displayName}}</strong></p>
+  <p class="info">alder: <strong>{{ user.age }}</strong></p>
+
+  <p class="info" >role:<strong>{{ user.Role }} </strong></p>
+  <p class="info">gender: <strong>{{ user.gender }}</strong></p>
+  <p class="info">ID: <strong>{{ user.uid }}</strong></p>
+  <button (click)="delete(user.uid)" class=" delete">delete</button>
+
+</div>
+
+
+
+<button (click)="logout()" class="info">log out</button>
+<div class="clearfix"></div>
+<hr>
+

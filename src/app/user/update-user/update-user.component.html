@@ -1,0 +1,36 @@
+<p>update-user works!</p>
+
+<form [formGroup]="updateuserForm" (ngSubmit)="onSubmit()">
+
+  <label>
+    full Name:
+    <input type="text" formControlName="displayName">
+  </label>
+  <br>
+  <label>
+    email:
+    <input type="text" formControlName="email">
+  </label>
+  <br>
+  <label>
+    password:
+    <input type="password" formControlName="password">
+  </label>
+  <br>
+  <label>
+    age:
+    <input type="text" formControlName="age">
+  </label>
+  <br>
+  <label>
+    Gender:
+    <select formControlName="gender">
+      <option disabled>vælg køn</option>
+      <option value="male">male</option>
+      <option value="female">female</option>
+    </select>
+  </label><br>
+  <button (click)="onSubmit()">update</button>
+</form>
+
+

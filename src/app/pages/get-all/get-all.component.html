@@ -1,0 +1,12 @@
+<h2>here is all Users</h2>
+
+<div *ngFor="let user of user$ | async"  class="user_information">
+  <p class="info">Email: <strong>{{ user.email}}</strong></p>
+  <p class="info">full name:<strong> {{ user.displayName}}</strong></p>
+  <p class="info">alder: <strong>{{ user.age }}</strong></p>
+  <p class="info" >role:<strong>{{ user.Role }} </strong></p>
+  <p class="info">gender: <strong>{{ user.gender }}</strong></p>
+  <p class="info">ID: <strong>{{ user.uid }}</strong></p>
+    <button (click)="updateRole(user)">update role</button>
+</div>
+<div class="clearfix"></div>

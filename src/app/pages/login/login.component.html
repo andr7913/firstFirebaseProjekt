@@ -1,0 +1,13 @@
+<h1>her kan du logge ind</h1>
+<h3>opret gerne en bruger! istedet for at ødelægge admin brugen med admin brugen</h3>
+<h4>email: admin@hotmail.com</h4>
+<h4>password: admin123</h4>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  email:<br>
+  <input type="text" name="email"  formControlName="email">
+  <br>
+  password:<br>
+  <input type="password" name="password" formControlName="password" >
+  <br><br>
+  <input type="submit" value="log ind">
+</form>

@@ -1,0 +1,37 @@
+.user_information{
+  width: 450px;
+  margin: auto auto;
+  border-bottom: magenta 1px solid;
+  margin-top: 1px;
+}
+.clearfix{
+  clear: both;
+}
+h2{
+  display: block;
+  width: 450px;
+  margin-left: 399px;
+  border-bottom: magenta 1px solid;
+}
+button{
+  padding: 15px;
+  font-size: 24px;
+  margin: 5px;
+}
+
+
+.delete{
+  background-color: #ff4000;
+}
+.delete:hover{
+  background-color: darkred;
+  color: #dddddd;
+}
+
+.update{
+  background-color:#33ff57;
+}
+.update:hover{
+  background-color: darkgreen;
+  color: #dddddd;
+}
