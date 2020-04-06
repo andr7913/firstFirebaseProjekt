@@ -51,7 +51,6 @@ export class AuthService {
 
   updateRole(user: User) {
     if (user.Role === 'admin' ) {
-
       this.firestor.collection('user').doc(user.uid).update({
         Role: 'bruger'
       });
