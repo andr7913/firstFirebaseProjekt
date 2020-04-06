@@ -11,6 +11,9 @@
   <p class="info">gender: <strong>{{ user.gender }}</strong></p>
   <p class="info">ID: <strong>{{ user.uid }}</strong></p>
   <button (click)="delete(user.uid)" class=" delete">delete</button>
+  <a [routerLink]="['/update-user/'+user.uid]">
+    update user
+  </a>
 
 </div>
 
